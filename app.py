@@ -299,8 +299,4 @@ elif user_type == "Job Seeker":
 
 # Footer
 st.markdown("---")
-<<<<<<< HEAD
 st.markdown("### Future-Ready Career Guidance")
-=======
-st.markdown("### Future-Ready Career Guidance")
->>>>>>> 0e61481d875bff79fe346dccb214bd84ab5eadbc
