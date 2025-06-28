@@ -1,0 +1,302 @@
+{
+  "Intern": {
+    "Data Analyst": {
+      "required_skills": ["Excel", "SQL", "Data Visualization", "Statistics", "Python/R basics"],
+      "preferred_skills": ["Tableau", "Power BI", "Pandas", "NumPy", "Google Analytics"],
+      "keywords": ["data analysis", "reporting", "dashboards", "metrics", "insights", "data cleaning", "spreadsheets"],
+      "job_specific_keywords": ["data entry", "data collection", "basic reporting", "chart creation", "pivot tables", "data validation"],
+      "min_experience": 0
+    },
+    "Software Development": {
+      "required_skills": ["Programming fundamentals", "Git", "HTML/CSS", "JavaScript OR Python OR Java", "Problem solving"],
+      "preferred_skills": ["React", "Node.js", "Database basics", "Linux", "Debugging"],
+      "keywords": ["coding", "programming", "software development", "debugging", "version control", "algorithms"],
+      "job_specific_keywords": ["code review", "unit testing", "bug fixes", "feature development", "documentation"],
+      "min_experience": 0
+    },
+    "Frontend Development": {
+      "required_skills": ["HTML", "CSS", "JavaScript", "Responsive Design", "Git"],
+      "preferred_skills": ["React", "Vue.js", "Bootstrap", "Sass", "Webpack"],
+      "keywords": ["web development", "user interface", "responsive design", "cross-browser compatibility", "frontend"],
+      "job_specific_keywords": ["UI components", "web pages", "user experience", "browser testing", "mobile responsive"],
+      "min_experience": 0
+    },
+    "QA Testing": {
+      "required_skills": ["Manual Testing", "Test Cases", "Bug Reporting", "Documentation", "Attention to detail"],
+      "preferred_skills": ["Selenium", "JIRA", "Postman", "API Testing", "Agile"],
+      "keywords": ["quality assurance", "testing", "bug tracking", "test execution", "software testing"],
+      "job_specific_keywords": ["test plans", "defect logging", "regression testing", "user acceptance testing", "test documentation"],
+      "min_experience": 0
+    },
+    "UI/UX Design": {
+      "required_skills": ["Design principles", "Figma", "Adobe Creative Suite", "Wireframing", "Prototyping"],
+      "preferred_skills": ["Sketch", "InVision", "User Research", "Adobe XD", "Design Systems"],
+      "keywords": ["user experience", "user interface", "design", "prototyping", "wireframes", "mockups"],
+      "job_specific_keywords": ["design mockups", "user flows", "style guides", "design assets", "usability"],
+      "min_experience": 0
+    },
+    "Digital Marketing": {
+      "required_skills": ["Social Media", "Content Creation", "Google Analytics", "SEO basics", "Communication"],
+      "preferred_skills": ["Google Ads", "Facebook Ads", "Email Marketing", "Canva", "WordPress"],
+      "keywords": ["digital marketing", "social media marketing", "content marketing", "online advertising", "marketing campaigns"],
+      "job_specific_keywords": ["social media posts", "content calendar", "campaign analytics", "brand awareness", "engagement metrics"],
+      "min_experience": 0
+    },
+    "Content Writing": {
+      "required_skills": ["Writing", "Grammar", "Research", "SEO basics", "Content Strategy"],
+      "preferred_skills": ["WordPress", "Google Analytics", "Social Media", "Copy writing", "Proofreading"],
+      "keywords": ["content writing", "copywriting", "blog writing", "content creation", "editorial", "publishing"],
+      "job_specific_keywords": ["blog posts", "article writing", "content planning", "editorial calendar", "content optimization"],
+      "min_experience": 0
+    },
+    "Business Analyst": {
+      "required_skills": ["Excel", "Data Analysis", "Documentation", "Communication", "Problem Solving"],
+      "preferred_skills": ["SQL", "Power BI", "Process Mapping", "Requirements Gathering", "Agile"],
+      "keywords": ["business analysis", "requirements", "process improvement", "data analysis", "documentation"],
+      "job_specific_keywords": ["business requirements", "process documentation", "stakeholder communication", "business processes"],
+      "min_experience": 0
+    },
+    "HR": {
+      "required_skills": ["Communication", "MS Office", "Interpersonal Skills", "Organization", "Confidentiality"],
+      "preferred_skills": ["HRIS", "Recruitment", "Employee Relations", "Labor Laws", "Payroll"],
+      "keywords": ["human resources", "recruitment", "employee relations", "HR operations", "talent acquisition"],
+      "job_specific_keywords": ["resume screening", "interview coordination", "employee onboarding", "HR documentation", "candidate sourcing"],
+      "min_experience": 0
+    },
+    "Sales": {
+      "required_skills": ["Communication", "Customer Service", "CRM basics", "Negotiation", "Lead Generation"],
+      "preferred_skills": ["Salesforce", "Cold Calling", "Email Marketing", "Social Selling", "Pipeline Management"],
+      "keywords": ["sales", "lead generation", "customer acquisition", "sales support", "client relations"],
+      "job_specific_keywords": ["lead qualification", "sales calls", "customer outreach", "sales pipeline", "prospect research"],
+      "min_experience": 0
+    },
+    "AI/ML": {
+      "required_skills": ["Python basics", "Mathematics", "Statistics", "Data Analysis", "Machine Learning concepts"],
+      "preferred_skills": ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Jupyter Notebooks"],
+      "keywords": ["artificial intelligence", "machine learning", "data science", "AI development", "ML algorithms"],
+      "job_specific_keywords": ["model training", "data preprocessing", "algorithm implementation", "AI research", "ML experiments"],
+      "min_experience": 0
+    },
+    "Cloud Computing": {
+      "required_skills": ["Cloud basics", "AWS/Azure/GCP fundamentals", "Linux", "Networking basics", "Virtualization"],
+      "preferred_skills": ["Docker", "Kubernetes basics", "Infrastructure as Code", "DevOps", "Security"],
+      "keywords": ["cloud computing", "cloud infrastructure", "cloud services", "cloud deployment", "cloud platforms"],
+      "job_specific_keywords": ["cloud migration", "cloud setup", "cloud monitoring", "cloud security", "cloud automation"],
+      "min_experience": 0
+    }
+  },
+  "Fresher": {
+    "Software Developer": {
+      "required_skills": ["Programming Languages", "Git", "Database Management", "Problem Solving", "Software Development Life Cycle"],
+      "preferred_skills": ["Framework Experience", "API Development", "Testing", "Agile", "Cloud Platforms"],
+      "keywords": ["software development", "programming", "coding", "application development", "software engineering"],
+      "job_specific_keywords": ["code development", "software design", "application building", "system development", "technical implementation"],
+      "min_experience": 0
+    },
+    "Data Analyst": {
+      "required_skills": ["SQL", "Excel", "Python/R", "Data Visualization", "Statistics"],
+      "preferred_skills": ["Tableau", "Power BI", "Machine Learning basics", "ETL", "Big Data tools"],
+      "keywords": ["data analysis", "business intelligence", "reporting", "analytics", "data insights"],
+      "job_specific_keywords": ["data modeling", "dashboard creation", "trend analysis", "performance metrics", "data interpretation"],
+      "min_experience": 0
+    },
+    "Frontend Developer": {
+      "required_skills": ["HTML", "CSS", "JavaScript", "React/Angular/Vue", "Responsive Design"],
+      "preferred_skills": ["TypeScript", "State Management", "Build Tools", "Testing Frameworks", "CSS Preprocessors"],
+      "keywords": ["frontend development", "web development", "user interface", "client-side development", "web applications"],
+      "job_specific_keywords": ["component development", "user interface design", "web optimization", "cross-browser compatibility", "frontend architecture"],
+      "min_experience": 0
+    },
+    "Backend Developer": {
+      "required_skills": ["Server-side Programming", "Database Management", "API Development", "Version Control", "Web Services"],
+      "preferred_skills": ["Microservices", "Cloud Services", "DevOps", "Security", "Performance Optimization"],
+      "keywords": ["backend development", "server-side development", "API development", "database management", "web services"],
+      "job_specific_keywords": ["server logic", "database design", "API integration", "backend architecture", "system integration"],
+      "min_experience": 0
+    },
+    "Full Stack Developer": {
+      "required_skills": ["Frontend Technologies", "Backend Technologies", "Database Management", "Version Control", "Web Development"],
+      "preferred_skills": ["DevOps", "Cloud Platforms", "Microservices", "Testing", "Agile"],
+      "keywords": ["full stack development", "web development", "end-to-end development", "application development", "software engineering"],
+      "job_specific_keywords": ["full stack architecture", "end-to-end development", "application design", "system development", "technology integration"],
+      "min_experience": 0
+    },
+    "QA Engineer": {
+      "required_skills": ["Manual Testing", "Automation Testing", "Test Planning", "Bug Tracking", "Testing Methodologies"],
+      "preferred_skills": ["Selenium", "API Testing", "Performance Testing", "CI/CD", "Agile Testing"],
+      "keywords": ["quality assurance", "software testing", "test automation", "quality control", "testing frameworks"],
+      "job_specific_keywords": ["test case design", "defect management", "test execution", "quality metrics", "testing strategy"],
+      "min_experience": 0
+    },
+    "Junior Data Scientist": {
+      "required_skills": ["Python/R", "Statistics", "Machine Learning", "Data Analysis", "SQL"],
+      "preferred_skills": ["Deep Learning", "Big Data", "Cloud Platforms", "MLOps", "Data Engineering"],
+      "keywords": ["data science", "machine learning", "predictive modeling", "statistical analysis", "data mining"],
+      "job_specific_keywords": ["model development", "data exploration", "feature engineering", "algorithm implementation", "predictive analytics"],
+      "min_experience": 0
+    },
+    "Mobile App Developer": {
+      "required_skills": ["Mobile Development", "Programming Languages", "Mobile UI/UX", "App Store Guidelines", "Version Control"],
+      "preferred_skills": ["Cross-platform Development", "Backend Integration", "Performance Optimization", "Mobile Testing", "App Analytics"],
+      "keywords": ["mobile development", "app development", "iOS development", "Android development", "mobile applications"],
+      "job_specific_keywords": ["mobile app design", "app functionality", "mobile optimization", "app deployment", "mobile user experience"],
+      "min_experience": 0
+    },
+    "Digital Marketing Specialist": {
+      "required_skills": ["Digital Marketing", "SEO/SEM", "Social Media Marketing", "Analytics", "Content Marketing"],
+      "preferred_skills": ["PPC", "Email Marketing", "Marketing Automation", "Conversion Optimization", "A/B Testing"],
+      "keywords": ["digital marketing", "online marketing", "social media marketing", "search engine optimization", "marketing campaigns"],
+      "job_specific_keywords": ["campaign management", "digital strategy", "online advertising", "marketing analytics", "brand promotion"],
+      "min_experience": 0
+    },
+    "Business Analyst": {
+      "required_skills": ["Business Analysis", "Requirements Gathering", "Data Analysis", "Process Modeling", "Documentation"],
+      "preferred_skills": ["SQL", "Business Intelligence", "Project Management", "Stakeholder Management", "Agile"],
+      "keywords": ["business analysis", "requirements analysis", "process improvement", "business intelligence", "stakeholder management"],
+      "job_specific_keywords": ["business requirements", "process optimization", "system analysis", "business solutions", "requirement documentation"],
+      "min_experience": 0
+    },
+    "AI/ML Engineer": {
+      "required_skills": ["Python/R", "Machine Learning", "Deep Learning", "TensorFlow/PyTorch", "Data Engineering"],
+      "preferred_skills": ["MLOps", "Computer Vision", "NLP", "Model Deployment", "Big Data"],
+      "keywords": ["AI engineering", "machine learning", "deep learning", "neural networks", "model development"],
+      "job_specific_keywords": ["model optimization", "AI solutions", "ML pipeline", "algorithm development", "model deployment"],
+      "min_experience": 0
+    },
+    "Cloud Developer": {
+      "required_skills": ["Cloud Platforms", "Programming", "Containerization", "Microservices", "API Development"],
+      "preferred_skills": ["Serverless", "DevOps", "Infrastructure as Code", "Cloud Security", "Monitoring"],
+      "keywords": ["cloud development", "cloud native", "serverless computing", "cloud architecture", "distributed systems"],
+      "job_specific_keywords": ["cloud applications", "serverless functions", "cloud integration", "microservices development", "cloud optimization"],
+      "min_experience": 0
+    }
+  },
+  "Experienced": {
+    "Senior Software Developer": {
+      "required_skills": ["Advanced Programming", "System Design", "Architecture", "Team Leadership", "Code Review"],
+      "preferred_skills": ["Microservices", "Cloud Architecture", "DevOps", "Performance Optimization", "Mentoring"],
+      "keywords": ["senior developer", "software architecture", "technical leadership", "system design", "code optimization"],
+      "job_specific_keywords": ["technical architecture", "system scalability", "code quality", "technical mentoring", "software design patterns"],
+      "min_experience": 3
+    },
+    "Data Scientist": {
+      "required_skills": ["Machine Learning", "Statistical Analysis", "Python/R", "Deep Learning", "Data Engineering"],
+      "preferred_skills": ["MLOps", "Big Data", "Cloud ML", "AI", "Research"],
+      "keywords": ["data science", "machine learning", "artificial intelligence", "predictive modeling", "statistical analysis"],
+      "job_specific_keywords": ["model deployment", "algorithm optimization", "data strategy", "ML pipeline", "predictive analytics"],
+      "min_experience": 2
+    },
+    "Machine Learning Engineer": {
+      "required_skills": ["Machine Learning", "MLOps", "Python", "Model Deployment", "Data Engineering"],
+      "preferred_skills": ["Deep Learning", "Cloud ML", "Kubernetes", "TensorFlow/PyTorch", "Big Data"],
+      "keywords": ["machine learning engineering", "MLOps", "model deployment", "AI engineering", "ML infrastructure"],
+      "job_specific_keywords": ["ML pipeline", "model optimization", "production ML", "ML infrastructure", "algorithm deployment"],
+      "min_experience": 2
+    },
+    "DevOps Engineer": {
+      "required_skills": ["CI/CD", "Cloud Platforms", "Infrastructure as Code", "Containerization", "Monitoring"],
+      "preferred_skills": ["Kubernetes", "Terraform", "Ansible", "Security", "Performance Tuning"],
+      "keywords": ["DevOps", "cloud infrastructure", "automation", "deployment", "infrastructure management"],
+      "job_specific_keywords": ["infrastructure automation", "deployment pipeline", "cloud migration", "system reliability", "infrastructure scaling"],
+      "min_experience": 2
+    },
+    "Cloud Engineer": {
+      "required_skills": ["Cloud Platforms", "Infrastructure", "Networking", "Security", "Automation"],
+      "preferred_skills": ["Multi-cloud", "Serverless", "Microservices", "Cost Optimization", "Disaster Recovery"],
+      "keywords": ["cloud engineering", "cloud architecture", "cloud infrastructure", "cloud migration", "cloud security"],
+      "job_specific_keywords": ["cloud solutions", "infrastructure design", "cloud optimization", "cloud deployment", "cloud strategy"],
+      "min_experience": 2
+    },
+    "Cybersecurity Analyst": {
+      "required_skills": ["Security Analysis", "Threat Detection", "Risk Assessment", "Security Tools", "Incident Response"],
+      "preferred_skills": ["Penetration Testing", "Forensics", "Compliance", "Security Architecture", "Threat Intelligence"],
+      "keywords": ["cybersecurity", "information security", "threat analysis", "security monitoring", "risk management"],
+      "job_specific_keywords": ["security assessment", "vulnerability management", "threat hunting", "security operations", "incident handling"],
+      "min_experience": 2
+    },
+    "Site Reliability Engineer": {
+      "required_skills": ["System Administration", "Monitoring", "Automation", "Troubleshooting", "Performance Optimization"],
+      "preferred_skills": ["Kubernetes", "Microservices", "Observability", "Incident Management", "Capacity Planning"],
+      "keywords": ["site reliability engineering", "system reliability", "infrastructure monitoring", "system administration", "performance optimization"],
+      "job_specific_keywords": ["system reliability", "infrastructure monitoring", "incident response", "system optimization", "reliability engineering"],
+      "min_experience": 2
+    },
+    "Product Manager": {
+      "required_skills": ["Product Strategy", "Roadmap Planning", "Stakeholder Management", "Market Analysis", "Project Management"],
+      "preferred_skills": ["Agile", "User Research", "Analytics", "A/B Testing", "Technical Understanding"],
+      "keywords": ["product management", "product strategy", "product development", "roadmap planning", "stakeholder management"],
+      "job_specific_keywords": ["product roadmap", "feature prioritization", "market research", "product launch", "product optimization"],
+      "min_experience": 3
+    },
+    "Engineering Manager": {
+      "required_skills": ["Team Leadership", "Technical Management", "Project Management", "People Management", "Strategic Planning"],
+      "preferred_skills": ["Agile", "Performance Management", "Hiring", "Budget Management", "Cross-functional Collaboration"],
+      "keywords": ["engineering management", "technical leadership", "team management", "engineering operations", "technical strategy"],
+      "job_specific_keywords": ["team leadership", "technical planning", "resource management", "engineering strategy", "team development"],
+      "min_experience": 5
+    },
+    "Technical Architect": {
+      "required_skills": ["System Architecture", "Design Patterns", "Technology Strategy", "Technical Leadership", "Solution Design"],
+      "preferred_skills": ["Enterprise Architecture", "Cloud Architecture", "Microservices", "Security Architecture", "Performance"],
+      "keywords": ["technical architecture", "system design", "solution architecture", "technology strategy", "architectural patterns"],
+      "job_specific_keywords": ["architectural design", "system integration", "technology roadmap", "solution design", "architectural governance"],
+      "min_experience": 5
+    },
+    "Scrum Master": {
+      "required_skills": ["Scrum", "Agile", "Facilitation", "Team Coaching", "Process Improvement"],
+      "preferred_skills": ["SAFe", "Kanban", "Lean", "Change Management", "Metrics"],
+      "keywords": ["scrum master", "agile coaching", "process facilitation", "team leadership", "agile transformation"],
+      "job_specific_keywords": ["sprint planning", "agile ceremonies", "team facilitation", "process optimization", "agile metrics"],
+      "min_experience": 2
+    },
+    "Digital Marketing Manager": {
+      "required_skills": ["Digital Strategy", "Campaign Management", "Analytics", "Team Leadership", "Budget Management"],
+      "preferred_skills": ["Marketing Automation", "Growth Hacking", "Conversion Optimization", "Customer Journey", "Attribution"],
+      "keywords": ["digital marketing management", "marketing strategy", "campaign optimization", "marketing analytics", "digital transformation"],
+      "job_specific_keywords": ["marketing strategy", "campaign optimization", "digital growth", "marketing ROI", "brand management"],
+      "min_experience": 3
+    },
+    "Operations Manager": {
+      "required_skills": ["Operations Management", "Process Optimization", "Team Leadership", "Project Management", "Budget Management"],
+      "preferred_skills": ["Lean Six Sigma", "Supply Chain", "Quality Management", "Strategic Planning", "Change Management"],
+      "keywords": ["operations management", "process improvement", "operational efficiency", "team leadership", "business operations"],
+      "job_specific_keywords": ["operational excellence", "process optimization", "resource management", "operational strategy", "performance management"],
+      "min_experience": 3
+    },
+    "Senior Business Analyst": {
+      "required_skills": ["Business Analysis", "Requirements Management", "Process Modeling", "Stakeholder Management", "Solution Design"],
+      "preferred_skills": ["Business Intelligence", "Data Analytics", "Project Management", "Change Management", "Enterprise Analysis"],
+      "keywords": ["senior business analyst", "business analysis", "requirements engineering", "process improvement", "business intelligence"],
+      "job_specific_keywords": ["business transformation", "requirements analysis", "solution design", "process reengineering", "business optimization"],
+      "min_experience": 3
+    },
+    "AI/ML Architect": {
+      "required_skills": ["Advanced ML", "AI Architecture", "Deep Learning", "MLOps", "System Design"],
+      "preferred_skills": ["Computer Vision", "NLP", "Reinforcement Learning", "Edge AI", "AI Ethics"],
+      "keywords": ["AI architecture", "machine learning architecture", "AI strategy", "ML systems", "artificial intelligence"],
+      "job_specific_keywords": ["AI infrastructure", "ML platform", "AI governance", "model architecture", "AI transformation"],
+      "min_experience": 5
+    },
+    "Cloud Architect": {
+      "required_skills": ["Cloud Architecture", "Multi-cloud", "Enterprise Architecture", "Security", "Cost Optimization"],
+      "preferred_skills": ["Hybrid Cloud", "Edge Computing", "Cloud Governance", "Disaster Recovery", "Migration Strategy"],
+      "keywords": ["cloud architecture", "enterprise cloud", "cloud strategy", "cloud transformation", "cloud governance"],
+      "job_specific_keywords": ["cloud strategy", "architectural governance", "cloud migration", "hybrid cloud", "cloud optimization"],
+      "min_experience": 5
+    },
+    "AI Product Manager": {
+      "required_skills": ["AI/ML Knowledge", "Product Strategy", "Technical Understanding", "Data Strategy", "Ethics"],
+      "preferred_skills": ["Computer Vision", "NLP", "MLOps", "AI Governance", "Regulatory Compliance"],
+      "keywords": ["AI product management", "ML product strategy", "AI ethics", "data products", "AI transformation"],
+      "job_specific_keywords": ["AI roadmap", "ML product development", "AI strategy", "data-driven products", "AI governance"],
+      "min_experience": 4
+    },
+    "Cloud Solutions Architect": {
+      "required_skills": ["Solution Architecture", "Cloud Platforms", "Enterprise Integration", "Technical Leadership", "Customer Facing"],
+      "preferred_skills": ["Industry Expertise", "Pre-sales", "Cloud Migration", "Cost Optimization", "Security"],
+      "keywords": ["solutions architecture", "cloud consulting", "enterprise solutions", "technical consulting", "cloud advisory"],
+      "job_specific_keywords": ["solution design", "cloud consulting", "technical advisory", "enterprise architecture", "cloud strategy"],
+      "min_experience": 4
+    }
+  }
+}
