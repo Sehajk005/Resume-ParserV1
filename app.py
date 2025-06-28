@@ -171,7 +171,7 @@ elif user_type == "Job Seeker":
         with col2:
             st.markdown("**Resume Keywords to Include:**")
             keywords = selected_profile.get("keywords", [])
-            for keyword in keywords[:8]:  # Show top 8
+            for keyword in keywords[:10]:  # Show top 10
                 st.markdown(f"• {keyword}")
             
             st.markdown("**Job-Specific Terms:**")
