@@ -18,3 +18,5 @@ Thumbs.db
 
 # Ignore Jupyter Notebook checkpoints (if any)
 .ipynb_checkpoints/
+
+*.pdf
