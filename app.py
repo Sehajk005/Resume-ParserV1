@@ -300,3 +300,4 @@ elif user_type == "Job Seeker":
 # Footer
 st.markdown("---")
 st.markdown("### Future-Ready Career Guidance")
+
