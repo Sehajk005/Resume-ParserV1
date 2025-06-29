@@ -194,7 +194,6 @@ def grammar_check(text):
         return None
 
 def score_optimization(text, job_profile):
-    from language_tool_python import LanguageTool
     
     optimization_score = 0
     optimization_breakdown = {
