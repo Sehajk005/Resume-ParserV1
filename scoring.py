@@ -175,7 +175,7 @@ def score_formatting(text, resume_data, file_extension="pdf"):
         formatting_score += 2
         
     return formatting_score, formatting_breakdown
-
+    
 import requests
 
 def grammar_check(text):
@@ -192,7 +192,7 @@ def grammar_check(text):
     except Exception as e:
         print("Grammar API failed:", e)
         return None
-    
+
 def score_optimization(text, job_profile):
     from language_tool_python import LanguageTool
     
@@ -224,6 +224,8 @@ def score_optimization(text, job_profile):
     else:
         optimization_breakdown["spelling_grammar_issues"] = "API failed"
         optimization_score += 2  # fallback
+
+
     
     # concise
     word_count = len(text.split())
