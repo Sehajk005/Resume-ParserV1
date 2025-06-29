@@ -29,7 +29,11 @@ def score_resume(resume_data, job_profile, text, file_extension="pdf"):
     return {
         "total_score": round(score),
         "breakdown": breakdown,
-        "parsed_data": resume_data
+        "parsed_data": resume_data,
+        "content_score": content_score,
+        "formatting_score": formatting_score,
+        "alignment_score": alignment_score,
+        "optimization_score": optimization_score
     }
 
 
@@ -172,23 +176,6 @@ def score_formatting(text, resume_data, file_extension="pdf"):
         
     return formatting_score, formatting_breakdown
     
-import requests
-
-def grammar_check(text):
-    url = "https://api.languagetool.org/v2/check"
-    data = {
-        'text': text[:2000],  # limit text length
-        'language': 'en-US'
-    }
-    try:
-        response = requests.post(url, data=data)
-        result = response.json()
-        matches = result.get("matches", [])
-        return len(matches)
-    except Exception as e:
-        print("Grammar API failed:", e)
-        return None
-
 def score_optimization(text, job_profile):
     from language_tool_python import LanguageTool
     
@@ -208,8 +195,10 @@ def score_optimization(text, job_profile):
     
     
     # Spelling/Grammar Check
-    errors = grammar_check(text)
-    if errors is not None:
+    try:
+        tool = LanguageTool("en-US")
+        matches = tool.check(text[:2000])  # Limit to 2000 chars for speed
+        errors = len(matches)
         optimization_breakdown["spelling_grammar_issues"] = errors
         if errors <= 2:
             optimization_score += 5
@@ -217,11 +206,8 @@ def score_optimization(text, job_profile):
             optimization_score += 3
         elif errors <= 10:
             optimization_score += 1
-    else:
-        optimization_breakdown["spelling_grammar_issues"] = "API failed"
-        optimization_score += 2  # fallback
-
-
+    except:
+        pass  # fallback if tool fails
     
     # concise
     word_count = len(text.split())
