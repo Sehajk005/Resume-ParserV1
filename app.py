@@ -2,8 +2,8 @@ import streamlit as st
 import tempfile, shutil, os
 from parser import extract_text, extract_entities, clean_text
 from scoring import score_resume
+from feedback import provide_content_recommendations, provide_comprehensive_feedback, provide_formatting_recommendations, provide_alignment_recommendations, provide_optimization_recommendations
 from utils import load_job_profiles
-
 job_profiles = load_job_profiles()
 
 st.set_page_config(page_title="Intelligent Resume Parser", layout="centered", page_icon="🚀")
@@ -201,7 +201,7 @@ elif user_type == "Job Seeker":
             parsed = extract_entities(cleaned_text)
             job_profile = job_profiles[job_post][job_category]
             score_data = score_resume(parsed, job_profile, cleaned_text, file_extension=file_ext.lstrip("."))
-
+            
         # Score display with visual indicator
         score = score_data['total_score']
         if score >= 80:
@@ -231,57 +231,13 @@ elif user_type == "Job Seeker":
                 st.markdown("**Status:** Minor tweaks needed")
             else:
                 st.markdown("**Status:** Needs improvement")
-
-        # Enhanced feedback section
+                
+        # 🧠 Generate detailed feedback
         st.markdown("---")
-        st.markdown("### Personalized Improvement Tips")
-        
-        breakdown = score_data["breakdown"]
-        
-        # Specific feedback based on score components
-        feedback_given = False
-        
-        if breakdown.get("skills_score", 0) < 70:
-            st.markdown("#### Skills Enhancement")
-            st.markdown("- Add more relevant technical skills from the required list")
-            st.markdown("- Include specific tools and technologies mentioned in job descriptions")
-            st.markdown("- Consider getting certifications in trending technologies (AI/ML, Cloud)")
-            feedback_given = True
-        
-        if breakdown.get("keywords_score", 0) < 70:
-            st.markdown("#### Keyword Optimization")
-            st.markdown("- Include more industry-specific keywords")
-            st.markdown("- Use action verbs like 'developed', 'implemented', 'optimized'")
-            st.markdown("- Add job-specific terminology from the role requirements")
-            feedback_given = True
-        
-        if breakdown.get("experience_score", 0) < 70:
-            st.markdown("#### Experience Section")
-            st.markdown("- Add more quantifiable achievements (numbers, percentages, metrics)")
-            st.markdown("- Include relevant projects, internships, or volunteer work")
-            st.markdown("- Highlight leadership and collaboration experiences")
-            feedback_given = True
-        
-        # General tips based on overall score
-        if score < 70:
-            st.markdown("#### General Improvements")
-            if not feedback_given:
-                st.markdown("- Ensure your resume is well-formatted and error-free")
-                st.markdown("- Add a professional summary highlighting your key strengths")
-                st.markdown("- Include relevant coursework, projects, or certifications")
-            
-            # Role-specific advice
-            if "AI" in job_category or "ML" in job_category:
-                st.markdown("- Showcase any data science projects or machine learning coursework")
-                st.markdown("- Mention programming languages like Python, R, SQL")
-                st.markdown("- Include any experience with ML frameworks (TensorFlow, PyTorch)")
-            elif "Cloud" in job_category:
-                st.markdown("- Highlight any cloud platform experience (AWS, Azure, GCP)")
-                st.markdown("- Mention containerization tools (Docker, Kubernetes)")
-                st.markdown("- Include infrastructure or DevOps related projects")
-        else:
-            st.success("Your resume is in great shape! Just fine-tune based on specific job requirements.")
-        
+        st.markdown("## AI-Powered Resume Feedback")
+        provide_comprehensive_feedback(score_data)
+
+
         # Additional resources
         st.markdown("---")
         st.markdown("### Additional Resources")
@@ -300,4 +256,3 @@ elif user_type == "Job Seeker":
 # Footer
 st.markdown("---")
 st.markdown("### Future-Ready Career Guidance")
-
