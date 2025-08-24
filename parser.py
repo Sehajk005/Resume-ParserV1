@@ -9,20 +9,28 @@ import re
 def extract_text(file_path: str) -> str:
     ext = os.path.splitext(file_path)[1].lower() # function to get file extension
     # Read the file based on its extension
-    if ext == ".pdf": 
-        with pdfplumber.open(file_path) as pdf: # use pdfplumber to read pdf
-            text = ""
-            for page in pdf.pages:
-                page_text = page.extract_text() 
-                if page_text:
-                    text += page_text + "\n"
-    elif ext == ".docx":
-        text = ""
-        for para in Document(file_path).paragraphs: # use python-docx to read docx
-            text += para.text + "\n"
-    else:
-        raise ValueError("Unsupported file format: Must be a .pdf or .docx")
-    
+    text = ""
+    try:
+        if ext == ".pdf": 
+            with pdfplumber.open(file_path) as pdf: # use pdfplumber to read pdf
+                for page in pdf.pages:
+                    page_text = page.extract_text() 
+                    if page_text:
+                        text += page_text + "\n"
+        elif ext == ".docx":
+            for para in Document(file_path).paragraphs: # use python-docx to read docx
+                text += para.text + "\n"
+        else:
+            raise ValueError("Unsupported file format: Must be a .pdf or .docx")
+    except pdfplumber.pdfa.PDFSyntaxError:
+        print(f"Error: Could not process the PDF file, it may be corrupted or malformed: {file_path}")
+        return ""
+    except OpcError:
+        print(f"Error: Could not process the DOCX file, it may be corrupted: {file_path}")
+        return ""
+    except Exception as e:
+        print(f"An unexpected error occurred while extracting text from {file_path}: {e}")
+        return ""
     return text
 # Function to get a specific section of text
 def extract_sections(text):
